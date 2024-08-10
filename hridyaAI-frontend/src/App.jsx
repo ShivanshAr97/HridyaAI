@@ -1,19 +1,17 @@
-import Navbar from "./components/Navbar"
-import Home from "./components/Home"
-import Services from "./components/Services"
-import About from "./components/About"
+import HeartFailurePrediction from "./pages/HeartFailurePrediction"
+import Landing from "./pages/Landing"
+import {BrowserRouter as Router,Routes,Route } from "react-router-dom"
 
 function App() {
-
-
   return (
     <>
-      {/* <h1 className="text-3xl font-bold underline text-red-400">Hello World</h1> */}
-      <Navbar/>
-      <Home/>
-      <Services/>
-      <About/>
-    </>
+   <Router>
+    <Routes>
+      <Route path="/" element={<Landing/>} />
+      <Route path="/heartfailureprediction" element={<HeartFailurePrediction/>}/>
+    </Routes>
+   </Router>
+   </>
   )
 }
 
