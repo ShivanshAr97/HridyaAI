@@ -20,6 +20,7 @@ Heart failure is a prevalent condition that can lead to fatalities if not addres
 Frontend: https://hridya-ai.vercel.app
 
 Backend: https://hridyaai.onrender.com/predict [POST]
+(Spins down after some time due to lack of activity)
 
 ```json
 {
