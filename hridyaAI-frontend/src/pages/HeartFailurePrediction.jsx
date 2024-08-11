@@ -60,7 +60,7 @@ const HeartFailurePrediction = () => {
     <>
       <Navbar />
       <ToastContainer/>
-      <div className="dark:bg-slate-800 min-h-screen flex items-center justify-center">
+      <div className="dark:bg-slate-800 flex items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 p-6">
           <div className="flex items-center justify-center">
             <img

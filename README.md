@@ -121,3 +121,9 @@ The project is hosted on Vercel and includes all necessary components such as co
 - Automate data collection from partnered hospitals to provide them a personalized utility tool.
 
 ## Video
+[Video](/video.mp4)
+
+For better quality (YouTube link): 
+
+[![Image](https://img.youtube.com/vi/6970JcbFORQ/0.jpg)](https://youtu.be/6970JcbFORQ)
+
