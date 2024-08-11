@@ -15,6 +15,24 @@ Heart failure is a prevalent condition that can lead to fatalities if not addres
 3. **Interface Design**: Create an intuitive interface to visualize predictions and insights.
 4. **Testing and Validation**: Ensure the model's reliability through extensive testing.
 
+## Deployment
+
+Frontend: https://hridya-ai.vercel.app
+
+Backend: https://hridyaai.onrender.com/predict [POST]
+
+```json
+{
+    "religion": "PROTESTANT QUAKER",
+    "marital_status": "MARRIED",
+    "ethnicity": "BLACK/AFRICAN AMERICAN",
+    "emergency_time": 10.0,
+    "gender": "M",
+    "age":40
+}
+```
+
+
 ## Data
 
 We have used the MIMIC-III dataset for this project. The dataset contains tables with various attributes related to patient demographics, hospital stays, and clinical data. The following ICD-9 codes represent heart failure:
@@ -35,32 +53,33 @@ We have used the MIMIC-III dataset for this project. The dataset contains tables
 ## Tools and Technologies
 
 - **Programming Languages**: Python, JavaScript
-- **Libraries**: Pandas, NumPy, Scikit-learn, Flask, ReactJS
-- **Design**: Figma
+- **Libraries/ Frameworks**: Pandas, NumPy, Scikit-learn, Flask, ReactJS, TailwindCSS
+- **Design**: Figma, Excalidraw
 - **Version Control**: GitHub
-- **Deployment**: Vercel
+- **Deployment**: Vercel, Render
 
 ## Installation and Usage
 1.**Clone the Repository**: 
-   ```bash
-   git clone https://github.com/ShivanshAr97/HridyaAI
-   ```
 
-2.**Install Dependencies:**:
+```
+git clone https://github.com/ShivanshAr97/HridyaAI
+```
 
-    ```bash
-    pip install -r ml/requirements.txt
-    ```
+2.**Install Dependencies**:
 
-3.**Run the Server:**: 
-    ```bash
-    python ml/server.py
-    ```
+```
+pip install -r ml/requirements.txt
+```
 
-4. **Access the Interface:**: 
-    ```bash
-    cd frontend && npm run dev
-    ```
+3.**Run the Server**: 
+```
+python ml/server.py
+```
+
+4.**Access the Interface**: 
+```
+cd frontend && npm run dev
+```
 
 ## Testing
 We have implemented both manual and automated testing procedures to ensure the accuracy and reliability of our model and software components.
@@ -73,25 +92,32 @@ Unit tests are written using the unit test framework.
 
 ## Team
 
-Member 1 - 
+- [Shivansh Arora](https://github.com/shivanshar97)
 
-Member 2 - 
+- [Kshitiz Sharma](https://github.com/kshitiz11101)
 
-Member 3 - 
+- [Nilay Datta](https://github.com/nilaydatta1234)
 
-Member 4 - 
+- [Krrish Malhotra](https://github.com/ota0912)
 
 ## Submission:
 
-The project is hosted on Vercel and includes all necessary components such as code, design files, and a short presentation video. Please find the link to our GitHub repository: Heart Failure Prediction.
+The project is hosted on Vercel and includes all necessary components such as code, design files, and a short presentation video. Please find the link to our [GitHub Repository](https://github.com/ShivanshAr97/HridyaAI).
 
+## Architechture and Design
 
-## Architechture
+- [Project Workflow](https://excalidraw.com/#json=GcJURuKrR7GKULACPi_HL,XjAlmsAjPuUFf-2s8kJ3nw)
 
-## Design
+- [Figma Design](https://www.figma.com/design/3aGOhbBEblEvr4HCy1m1LT/Veersa?node-id=0-1&t=uQiAmIdNgSciV4OT-1)
+
+- [Canva Presentation](https://www.canva.com/design/DAGBlPKyO3M/xMkP2nAkGD7kRWcjwjnZeA/view?utm_content=DAGBlPKyO3M&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+
+![alt text](image.png)
+
 
 ## Future Scope
-
-## Deployement
+- Involve more complex parameters to enhance the accuracy of the model.
+- Incorporate the model for other diagnosis like cancer, tumor, etc.
+- Automate data collection from partnered hospitals to provide them a personalized utility tool.
 
 ## Video
