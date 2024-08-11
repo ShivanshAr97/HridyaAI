@@ -44,7 +44,7 @@ const HeartFailurePrediction = () => {
   };
   const PredictReAdmission = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/predict", reqArray);
+      const res = await axios.post("https://hridyaai.onrender.com/predict", reqArray);
       console.log(reqArray);
 
       console.log("Prediction is successful", res.data);
