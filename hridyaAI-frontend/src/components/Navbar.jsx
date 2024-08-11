@@ -13,9 +13,9 @@ const Navbar = () => {
         <header className='flex items-center justify-between px-6 py-4 '>
             <div className='flex items-center'>
                 <img src='/logo.png' alt="Logo" 
-                width={100}
+                width={120}
                 height={50}
-                style={{aspectRatio:"100/50" ,objectFit:"cover"}}
+                style={{objectFit:"cover"}}
                 />
             </div>
             <nav className='flex space-x-8 text-lg font-medium '>

@@ -13,19 +13,14 @@ const About = () => {
           style={{ aspectRatio: "500/500", objectFit: "cover" }}
         />
       </div>
-      <div className="text-center md:text-left max-w-md md:w-1/2 md:ml-8">
-        <h4 className="font-semibold text-gray-800 dark:text-gray-200 text-2xl font-nunito ">About Us</h4>
+      <div className="text-center md:text-left max-w-xl md:w-1/2 md:-ml-8">
+        <h4 className="font-semibold text-gray-600 dark:text-gray-200 text-2xl font-nunito ">About Us</h4>
         <h2 className="text-4xl font-bold py-2 leading-left dark:text-gray-200">We Help Your Health</h2>
-        <p className="mt-4 text-gray-400 dark:text-gray-200">
-          This profile describes the activities of health services and medical
-          support as well as the facilities and conditions of the General
-          Hospital which is reflected in the general public served from all
-          groups, religions and beliefs, ethnicity and the level and frequency
-          of bed occupancy which continues to increase significantly.
+        <p className="mt-4 text-gray-600 dark:text-gray-200 text-justify">
+        हृदयAI is an advanced machine learning project designed to predict the risk of heart failure readmissions within 30 days of hospital discharge. <br />
+        By analyzing comprehensive patient data, Hridya AI aims to identify individuals at high risk of readmission, enabling targeted interventions that can reduce mortality rates and alleviate financial burdens on patients and healthcare systems. <br />
+        Utilizing a dataset with various medical records and heart failure diagnosis codes, our project integrates data analysis with predictive modeling to offer actionable insights for improved patient care and optimized healthcare resource management.
         </p>
-        <button className="text-lg rounded-lg mt-6 bg-red-500 text-white hover:bg-red-600 border-black z-10  border-b border-collapse px-8 py-4">
-         More About Us
-        </button>
       </div>
     </main>
   );

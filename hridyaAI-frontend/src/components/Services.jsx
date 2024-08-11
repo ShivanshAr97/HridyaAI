@@ -6,7 +6,7 @@ const Services = () => {
     <div className='text-center mb-10'>
     <h3 className='text-lg font-semibold text-gray-700'></h3>
     <p className='font-xl text-black font-semibold dark:text-gray-200 text-2xl font-pjs '>Our Services</p>
-    <h2 className="text-3xl font-bold text-gray-600 dark:text-gray-400 font-poppins">3 Easy Steps To Care Your Heart</h2>
+    <h2 className="text-3xl font-bold text-gray-600 dark:text-gray-400 font-poppins">3 Easy Steps To Care For Your Heart</h2>
     </div>
     <div className='flex flex-col items-center justify-center md:flex-row space-y-6 md:space-y-0 md:space-x-8'>
         <div className='flex flex-col items-center bg-white p-14 rounded-lg shadow-md dark:bg-slate-400'>

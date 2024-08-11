@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pandas as pd
 import joblib
 from sklearn.preprocessing import MinMaxScaler
@@ -8,6 +9,8 @@ app = Flask(__name__)
 
 model_filename = 'model.joblib'
 loaded_model = joblib.load(model_filename)
+
+CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -54,6 +57,9 @@ def predict():
         prediction = loaded_model.predict(sample_input)
 
         prediction_value = prediction[0].item()
+
+        print(data)
+        print("\n prediction: ",prediction_value)
 
         return jsonify({'prediction': prediction_value})
 
