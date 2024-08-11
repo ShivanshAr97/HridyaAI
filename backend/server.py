@@ -10,7 +10,7 @@ app = Flask(__name__)
 model_filename = 'model.joblib'
 loaded_model = joblib.load(model_filename)
 
-CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
+CORS(app, resources={r"/*": {"origins": "https://hridya-ai.vercel.app"}})
 
 @app.route('/predict', methods=['POST'])
 def predict():
