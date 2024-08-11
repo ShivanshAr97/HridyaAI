@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import {toast, ToastContainer} from 'react-toast';
 import axios from "axios";
 const HeartFailurePrediction = () => {
   const [religion, setReligion] = useState("");
@@ -46,17 +47,19 @@ const HeartFailurePrediction = () => {
     try {
       const res = await axios.post("https://hridyaai.onrender.com/predict", reqArray);
       console.log(reqArray);
-
       console.log("Prediction is successful", res.data);
+      toast.success("Prediction Result is Successful");
       setPrediction(res.data.prediction);
     } catch (error) {
       console.log("Error in getting prediction", error);
+      toast.error("Prediction Result is Unsuccessful");
     }
   };
 
   return (
     <>
       <Navbar />
+      <ToastContainer/>
       <div className="dark:bg-slate-800 min-h-screen flex items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 p-6">
           <div className="flex items-center justify-center">
@@ -71,7 +74,7 @@ const HeartFailurePrediction = () => {
               Predict the Readmission of Heart Failure Patients
             </h1>
             <div className="flex flex-col">
-              <label className="dark:text-gray-300 p-1">Religion</label>
+              <label className="dark:text-gray-300 p-1 font-shrik">Religion</label>
               <select
                 value={religion}
                 onChange={(e) => setReligion(e.target.value)}
@@ -85,7 +88,7 @@ const HeartFailurePrediction = () => {
                 ))}
               </select>
               <div className="flex flex-col">
-                <label className="dark:text-gray-300 p-1">Age</label>
+                <label className="dark:text-gray-300 p-1 font-shrik">Age</label>
                 <input
                   type="number"
                   value={age}
@@ -94,7 +97,7 @@ const HeartFailurePrediction = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <label className="dark:text-gray-300 p-1">Gender</label>
+                <label className="dark:text-gray-300 p-1 font-shrik">Gender</label>
                 <select
                   value={gender}
                   onChange={(e) => setGender(e.target.value)}
@@ -109,7 +112,7 @@ const HeartFailurePrediction = () => {
                 </select>
               </div>
               <div className="flex flex-col">
-                <label className="dark:text-gray-300 p-1">Ethnicity</label>
+                <label className="dark:text-gray-300 p-1 font-shrik">Ethnicity</label>
                 <select
                   value={ethnicity}
                   onChange={(e) => setEthnicity(e.target.value)}
@@ -124,7 +127,7 @@ const HeartFailurePrediction = () => {
                 </select>
               </div>
               <div className="flex flex-col">
-                <label className="dark:text-gray-300 p-1">Marital Status</label>
+                <label className="dark:text-gray-300 p-1 font-shrik">Marital Status</label>
                 <select
                   value={maritalStatus}
                   onChange={(e) => setMaritalStatus(e.target.value)}
@@ -139,7 +142,7 @@ const HeartFailurePrediction = () => {
                 </select>
               </div>
               <div className="flex flex-col">
-                <label className="dark:text-gray-300 p-1">
+                <label className="dark:text-gray-300 p-1 font-shrik">
                   Emergency Time (hours)
                 </label>
                 <input
@@ -159,11 +162,11 @@ const HeartFailurePrediction = () => {
                 <div className="text-center dark:text-gray-300 mt-4">
                   {prediction === 0 ? (
                     <h2 className="bg-green-600 text-white rounded-md py-2">
-                      Prediction Result: {prediction}
+                      Prediction Result: {prediction} <span>Congrats! You doesn't need to get readmitted</span>
                     </h2>
                   ) : (
                     <h2 className="bg-red-600 text-white py-2 rounded-md">
-                      Prediction Result: {prediction}
+                      Prediction Result: {prediction} <span>You might needs to get readmitted</span>
                     </h2>
                   )}
                 </div>
