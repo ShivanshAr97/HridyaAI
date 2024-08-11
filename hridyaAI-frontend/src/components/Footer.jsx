@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedin, FaMailBulk, FaPhone } from 'react-icons/fa'
 import {MdEmail} from 'react-icons/md';
 const Footer = () => {
   return (
-   <footer className='py-10 text-gray-800 bg-blue-50 dark:bg-gray-800 dark:text-gray-300'>
+   <footer id='footer' className='py-10 text-gray-800 bg-blue-50 dark:bg-gray-800 dark:text-gray-300'>
     <div className='container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8'>
     <div className='flex flex-col items-start'>
     <img src="/logo.png" alt="logo" className='mb-4 w-32'/>

@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <main className="flex flex-col-reverse items-center justify-evenly py-20 md:flex-row w-full dark:bg-slate-800">
+    <main id="about" className="flex flex-col-reverse items-center justify-evenly py-20 md:flex-row w-full dark:bg-slate-800">
       <div className="max-w-lg md:w-1/2">
         <img
           src="/doctor3.png"
