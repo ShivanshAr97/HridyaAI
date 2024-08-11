@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Testimonials = () => {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const heartFailurePrediction = () => {
     navigate("/heartfailureprediction");
   };
@@ -24,7 +24,9 @@ const Testimonials = () => {
             className="w-full rounded-md h-72 object-cover"
           />
           <div className="mt-4 ">
-            <h3 className="text-lg font-semibold text-gray-800">Person-1</h3>
+            <h3 className="text-lg font-semibold text-gray-800">
+              Ramesh Kumar
+            </h3>
             <p className="mt-2 text-gray-600 font-semibold">
               The service I felt was very good, the staff and doctors were
               friendly and provided very clear information.
@@ -47,11 +49,11 @@ const Testimonials = () => {
             className="w-full h-72 object-cover rounded-md"
           />
           <div className="mt-4 ">
-            <h3 className="text-lg font-semibold">Person-2</h3>
+            <h3 className="text-lg font-semibold">Suresh Kumar</h3>
             <p className="mt-2 text-gray-600 font-semibold">
               {" "}
-              The service I felt was very good, the staff and doctors were
-              friendly and provided very clear information.
+              It was a great experience with their platform,the staff and
+              doctors were quite supportive.
             </p>
             <div className="mt-4 flex items-center">
               <div className="flex">
@@ -68,14 +70,13 @@ const Testimonials = () => {
       <div className="mt-12">
         <div className="bg-blue-300 flex text-white py-12 px-6 rounded-lg shadow-md max-w-7xl mx-auto text-center">
           <div className="border">
-
-          <h3 className="text-2xl font-bold border">
-            Let's Consult Your Health With Our Model
-          </h3>
-          <p className="mt-2">We Will Provide The Best Service.</p>
+            <h3 className="text-2xl font-bold border">
+              Let's Consult Your Health With Our Model
+            </h3>
+            <p className="mt-2">We Will Provide The Best Service.</p>
           </div>
           <button
-            className="mt-6 px-4 py-1 bg-red-400 text-white rounded-lg hover:bg-green-700"
+            className="mt-6 px-4 py-1 bg-red-400 text-white rounded-lg hover:bg-red-500"
             onClick={heartFailurePrediction}
           >
             Try Now

@@ -11,11 +11,12 @@ const Navbar = () => {
   return (
     <div className='bg-white text-black dark:bg-slate-800 '>
         <header className='flex items-center justify-between px-6 py-4 '>
-            <div className='flex items-center'>
+            <div className='flex items-center cursor-pointer'>
                 <img src='/logo.png' alt="Logo" 
                 width={120}
                 height={50}
                 style={{objectFit:"cover"}}
+                onClick={() => window.location.reload()}
                 />
             </div>
             <nav className='flex space-x-8 text-lg font-medium '>

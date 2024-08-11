@@ -12,20 +12,20 @@ const Services = () => {
         <div className='flex flex-col items-center bg-white p-14 rounded-lg shadow-md dark:bg-slate-400'>
            <img src='/healthcare1.png' alt="" />
             <h3 className="text-2xl font-semibold mb-2 dark:text-gray-100 font-cardo">Step 1</h3>
-            <p className="text-gray-500 text-center text-xl dark:text-gray-300">Choose What Date To Check</p>
+            <p className="text-gray-500 text-center text-xl dark:text-gray-300">Enter the required fields</p>
         </div>
 
         <div className="flex flex-col items-center bg-white p-14 rounded-lg shadow-md dark:bg-slate-400">
 
             <img src='/healthcare2.png' alt="healthcare2" />
           <h3 className="text-2xl font-semibold mb-2 dark:text-gray-100 font-cardo">Step 2</h3>
-          <p className="text-gray-500 text-center text-xl dark:text-gray-300">Choose What Poly To Check</p>
+          <p className="text-gray-500 text-center text-xl dark:text-gray-300">Wait till the model predicts</p>
         </div>
         <div className='flex flex-col items-center bg-white p-14 rounded-lg shadow-md dark:bg-slate-400'>
 
                 <img src='/doctor2.png' alt="doctor2" />
             <h3 className='text-2xl font-semibold mb-2 dark:text-gray-100 font-cardo'>Step 3</h3>
-            <p className=' text-gray-500 text-center text-xl dark:text-gray-300'>And Choose doctor to check</p>
+            <p className=' text-gray-500 text-center text-xl dark:text-gray-300'>Consult to doctor if needed</p>
         </div>
     </div>
    </section>
