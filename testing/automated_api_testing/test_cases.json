@@ -1,0 +1,108 @@
+{
+    "test_cases": [
+        {
+            "name": "Testcase 1",
+            "data": {
+                "religion": "PROTESTANT QUAKER",
+                "marital_status": "MARRIED",
+                "ethnicity": "BLACK/AFRICAN AMERICAN",
+                "emergency_time": 0.0,
+                "gender": "M",
+                "age": 40
+            }
+        },
+        {
+            "name": "Testcase 2",
+            "data": {
+                "religion": "CATHOLIC",
+                "marital_status": "SINGLE",
+                "ethnicity": "WHITE",
+                "emergency_time": 2.5,
+                "gender": "F",
+                "age": 30
+            }
+        },
+        {
+            "name": "Testcase 3",
+            "data": {
+                "marital_status": "MARRIED",
+                "ethnicity": "BLACK/AFRICAN AMERICAN",
+                "emergency_time": 0.0,
+                "gender": "M",
+                "age": 40
+            }
+        },
+        {
+            "name": "Testcase 4",
+            "data": {
+                "religion": "PROTESTANT QUAKER",
+                "ethnicity": "BLACK/AFRICAN AMERICAN",
+                "emergency_time": 0.0,
+                "gender": "M",
+                "age": 40
+            }
+        },
+        {
+            "name": "Testcase 5",
+            "data": {
+                "religion": "PROTESTANT QUAKER",
+                "marital_status": "MARRIED",
+                "emergency_time": 0.0,
+                "gender": "M",
+                "age": 40
+            }
+        },
+        {
+            "name": "Testcase 6",
+            "data": {
+                "religion": "PROTESTANT QUAKER",
+                "marital_status": "MARRIED",
+                "ethnicity": "BLACK/AFRICAN AMERICAN",
+                "gender": "M",
+                "age": 40
+            }
+        },
+        {
+            "name": "Testcase 7",
+            "data": {
+                "religion": "PROTESTANT QUAKER",
+                "marital_status": "MARRIED",
+                "ethnicity": "BLACK/AFRICAN AMERICAN",
+                "emergency_time": 0.0,
+                "age": 40
+            }
+        },
+        {
+            "name": "Testcase 8",
+            "data": {
+                "religion": "PROTESTANT QUAKER",
+                "marital_status": "MARRIED",
+                "ethnicity": "BLACK/AFRICAN AMERICAN",
+                "emergency_time": 0.0,
+                "gender": "M"
+            }
+        },
+        {
+            "name":"Testcase 9",
+            "data": {
+                "religion": "PROTESTANT QUAKER",
+                "marital_status": "MARRIED",
+                "ethnicity": "BLACK/AFRICAN AMERICAN",
+                "emergency_time": 0.0,
+                "gender": "M",
+                "age": "test"
+            }
+        },
+        {
+            "name":"Testcase 10",
+            "data": {
+                "religion": "PROTESTANT QUAKER",
+                "marital_status": "MARRIED",
+                "ethnicity": "BLACK/AFRICAN AMERICAN",
+                "emergency_time": "test",
+                "gender": "M",
+                "age": 40
+            }
+        }
+    ]
+}

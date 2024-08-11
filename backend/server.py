@@ -17,13 +17,18 @@ def predict():
     try:
         data = request.get_json(force=True)
 
+        required_fields = ['religion', 'marital_status', 'ethnicity', 'emergency_time', 'gender', 'age']
+        for field in required_fields:
+            if field not in data:
+                raise ValueError(f"Missing required field: {field}")
+
         user_input = {
-            'religion': data.get('religion', 'NOT SPECIFIED'),
-            'marital_status': data.get('marital_status', 'SINGLE'),
-            'ethnicity': data.get('ethnicity', 'UNKNOWN/NOT SPECIFIED'),
-            'emergency_time': float(data.get('emergency_time', 0.0)),
-            'gender': data.get('gender', 'M'),
-            'age': int(data.get('age', 0))
+            'religion': data['religion'],
+            'marital_status': data['marital_status'],
+            'ethnicity': data['ethnicity'],
+            'emergency_time': float(data['emergency_time']),
+            'gender': data['gender'],
+            'age': int(data['age'])
         }
 
         user_df = pd.DataFrame([user_input])
@@ -58,13 +63,14 @@ def predict():
 
         prediction_value = prediction[0].item()
 
-        print(data)
-        print("\n prediction: ",prediction_value)
-
         return jsonify({'prediction': prediction_value})
 
+    except ValueError as ve:
+        return jsonify({'error': str(ve)}), 400
+    except KeyError as ke:
+        return jsonify({'error': f"Key error: {str(ke)}"}), 400
     except Exception as e:
-        return jsonify({'error': str(e)}), 500
+        return jsonify({'error': f"An error occurred: {str(e)}"}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)

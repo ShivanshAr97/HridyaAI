@@ -112,7 +112,7 @@ The project is hosted on Vercel and includes all necessary components such as co
 
 - [Canva Presentation](https://www.canva.com/design/DAGBlPKyO3M/xMkP2nAkGD7kRWcjwjnZeA/view?utm_content=DAGBlPKyO3M&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
-![alt text](image.png)
+![alt text](repo_assets/architecture.png)
 
 
 ## Future Scope

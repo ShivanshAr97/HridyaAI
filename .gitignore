@@ -3,3 +3,4 @@ ml/veersa/
 .venv
 
 */node_modules/
+testing/automated_api_testing/test_results.json
