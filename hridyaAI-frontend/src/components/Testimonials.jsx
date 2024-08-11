@@ -68,19 +68,19 @@ const Testimonials = () => {
         </div>
       </div>
       <div className="mt-12">
-        <div className="bg-blue-300 flex text-white py-12 px-6 rounded-lg shadow-md max-w-7xl mx-auto text-center">
-          <div className="border">
-            <h3 className="text-2xl font-bold border">
-              Let's Consult Your Health With Our Model
-            </h3>
+        <div className="bg-blue-300 text-white py-12 px-20 rounded-lg shadow-md max-w-7xl mx-auto">
+          <h3 className="text-3xl font-bold">
+            Let's Consult Your Health With <br /> Our Model
+          </h3>
+          <div className="flex justify-between mt-4">
             <p className="mt-2">We Will Provide The Best Service.</p>
+            <button
+              className=" px-6 py-1.5 bg-red-400 text-white rounded-lg hover:bg-green-700"
+              onClick={heartFailurePrediction}
+            >
+              Try Now
+            </button>
           </div>
-          <button
-            className="mt-6 px-4 py-1 bg-red-400 text-white rounded-lg hover:bg-red-500"
-            onClick={heartFailurePrediction}
-          >
-            Try Now
-          </button>
         </div>
       </div>
     </section>
