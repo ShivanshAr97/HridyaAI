@@ -1,0 +1,52 @@
+{
+    "Testcase 1": {
+        "expected_output": {
+            "prediction": 1
+        }
+    },
+    "Testcase 2": {
+        "expected_output": {
+            "prediction": 0
+        }
+    },
+    "Testcase 3": {
+        "expected_output": {
+            "error": "Missing required field: religion"
+        }
+    },
+    "Testcase 4": {
+        "expected_output": {
+            "error": "Missing required field: marital_status"
+        }
+    },
+    "Testcase 5": {
+        "expected_output": {
+            "error": "Missing required field: ethnicity"
+        }
+    },
+    "Testcase 6": {
+        "expected_output": {
+            "error": "Missing required field: emergency_time"
+        }
+    },
+    "Testcase 7": {
+        "expected_output": {
+            "error": "Missing required field: gender"
+        }
+    },
+    "Testcase 8": {
+        "expected_output": {
+            "error": "Missing required field: age"
+        }
+    },
+    "Testcase 9": {
+        "expected_output": {
+            "error": "invalid literal for int() with base 10: 'test'"
+        }
+    },
+    "Testcase 10": {
+        "expected_output": {
+            "error": "could not convert string to float: 'test'"
+        }
+    }
+}

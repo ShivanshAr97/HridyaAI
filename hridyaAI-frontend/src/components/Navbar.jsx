@@ -19,9 +19,9 @@ const Navbar = () => {
                 />
             </div>
             <nav className='flex space-x-8 text-lg font-medium '>
-                <a href="#" className='font-bold text-black dark:text-white '>Home</a>
-                <a href="#" className='hover:font-bold text-gray-600 hover:text-black dark:text-gray-200 dark:hover:text-gray-500'>About</a>
-                <a href="#" className='hover:font-bold  text-gray-600 hover:text-black dark:text-gray-200 dark:hover:text-gray-500'>Features</a>
+                <a href="" className='font-bold text-black dark:text-white '>Home</a>
+                <a href="#about" className='hover:font-bold text-gray-600 hover:text-black dark:text-gray-200 dark:hover:text-gray-500'>About</a>
+                <a href="#footer" className='hover:font-bold  text-gray-600 hover:text-black dark:text-gray-200 dark:hover:text-gray-500'>Features</a>
             </nav>
             <button className='text-2xl' onClick={toggleDarkMode}>
            {darkMode==="light"?<FaMoon/>:<FaSun className='text-white'/>} 
